@@ -1,0 +1,23 @@
+# Npm
+.npmrc
+
+# Node
+node_modules/
+npm-debug.log
+.yarn/
+.pnpm-debug.log
+
+# Build
+dist/
+
+# Env/Secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.tgz
