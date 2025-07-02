@@ -1,9 +1,15 @@
 /* eslint-env node */
 module.exports = {
     root: true,
-    'extends': [
+    'env': {
+        'browser': true,
+        'es2021': true
+    },
+    extends: [
         'eslint:recommended'
     ],
+    parser: '@typescript-eslint/parser',
+    plugins: ['@typescript-eslint'],
     parserOptions: {
         sourceType: 'module',
         ecmaVersion: 'latest'
@@ -45,4 +51,4 @@ module.exports = {
         'space-before-function-paren': ['error', 'always'],
         'space-infix-ops': 'error'
     }
-}
+};

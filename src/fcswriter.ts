@@ -11,7 +11,6 @@ export type Parameter = {
     label?: string;
 }
 
-
 export class FCSWriter {
     private parameters: Parameter[] = [];
     private headerSegment = new Uint8Array(58);
@@ -19,7 +18,6 @@ export class FCSWriter {
     private dataSegment: Uint8Array;
     private dataLength: number;
     private _tempTextSegmentLength: number;
-
 
     setParameters (parameters: Parameter[]) {
         this.parameters = parameters;
@@ -72,7 +70,6 @@ export class FCSWriter {
         URL.revokeObjectURL(url);
     }
 
-
     private buildTextSegment () {
         const textStart = 58;
         const textEnd = textStart + this.textSegment?.length - 1;
@@ -110,7 +107,7 @@ export class FCSWriter {
                 textFields.push(`${parameter.logScaling.decades.toString()},${parameter.logScaling.base.toString()}`);
             }
             else {
-                textFields.push(`0,0`);
+                textFields.push('0,0');
             }
 
             if (parameter.gain) {

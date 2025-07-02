@@ -13,11 +13,10 @@
     "files": [
         "dist"
     ],
-    "dependencies": {
-    },
     "devDependencies": {
         "@types/node": "^22.15.3",
-        "@typescript-eslint/parser": "^8.31.1",
+        "@typescript-eslint/eslint-plugin": "^8.35.1",
+        "@typescript-eslint/parser": "^8.35.1",
         "eslint": "^9.25.1",
         "ts-node": "^10.9.2",
         "tsup": "^8.4.0",
