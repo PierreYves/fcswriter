@@ -2,9 +2,10 @@
 module.exports = {
     root: true,
     'extends': [
-        'eslint:recommended',
+        'eslint:recommended'
     ],
     parserOptions: {
+        sourceType: 'module',
         ecmaVersion: 'latest'
     },
     rules: {
