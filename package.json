@@ -4,15 +4,20 @@
     "type": "module",
     "main": "./dist/index.cjs",
     "types": "./dist/index.d.ts",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    },
     "scripts": {
         "build": "tsup"
     },
     "files": [
         "dist"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PierreYves/fcswriter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/PierreYves/fcswriter/issues"
+    },
+    "homepage": "https://github.com/PierreYves/fcswriter#readme",
     "devDependencies": {
         "@types/node": "^22.15.3",
         "@typescript-eslint/eslint-plugin": "^8.35.1",
